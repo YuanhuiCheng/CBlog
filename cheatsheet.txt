@@ -1,0 +1,4 @@
+bundle install
+bundle exec jekyll serve # run your Jekyll site locally. 
+
+bundle update github-pages # update the github-pages gem

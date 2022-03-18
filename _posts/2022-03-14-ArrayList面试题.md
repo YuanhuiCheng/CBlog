@@ -53,6 +53,8 @@ private Object[] grow() {
 }
 
 private void add(E e, Object[] elementData, int s) {
+    // 只有当 list 的 size 和 elementData 的 length 相等时，
+    // 才会去执行 grow()
     if (s == elementData.length)
         elementData = grow();
     elementData[s] = e;
